@@ -1,0 +1,11 @@
+{
+  "name": "sportNews",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "47f5cb3a"
+}

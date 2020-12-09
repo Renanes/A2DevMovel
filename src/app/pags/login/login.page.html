@@ -1,0 +1,19 @@
+<ion-content>
+  <ion-img src="../assets/Jack.png"></ion-img>
+  <div id="container">
+    <form>
+      <ion-item class="ion-margin">
+        <ion-label position="floating" color="dark">E-mail</ion-label>
+        <ion-input name="login" type="text" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item class="ion-margin">
+        <ion-label position="floating" color="dark">Senha</ion-label>
+        <ion-input name="password" type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-button id="botao" type="button" color="dark" (click)="loginUsuario()">Login</ion-button>
+    </form>
+    <ion-label class="ion-margin"><p>Não tem uma conta? <a [routerLink]="['/cadastrar']">Cadastre-se</a></p></ion-label>
+  </div>
+</ion-content>
+
+

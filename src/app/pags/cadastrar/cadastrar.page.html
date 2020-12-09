@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-img src="../assets/Jack.png"></ion-img>
+  <div id="container">
+    <form>
+      <ion-item class="ion-margin">
+        <ion-label position="floating" color="dark">E-mail</ion-label>
+        <ion-input name="login" type="text" [(ngModel)]="email" placeholder="example@email.com"></ion-input>
+      </ion-item>
+      <ion-item class="ion-margin">
+        <ion-label position="floating" color="dark">Senha</ion-label>
+        <ion-input name="password" type="password" [(ngModel)]="password" placeholder="Mínimo 6 caracteres"></ion-input>
+      </ion-item>
+      <ion-item class="ion-margin">
+        <ion-label position="floating" color="dark">Digite a senha novamente</ion-label>
+        <ion-input name="password2" type="password" [(ngModel)]="password2"></ion-input>
+      </ion-item>
+      <ion-button type="button" color="dark" (click)="insereUsuario()">Criar Conta</ion-button><br>
+      <a [routerLink]="['/login']"><ion-button type="button" color="warning">Voltar</ion-button></a>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light"><strong>Notícias</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="efeitoRefresh($event)">
+    <ion-refresher-content
+      refreshingSpinner="circular">
+    </ion-refresher-content>
+  </ion-refresher>
+  
+  <ion-card *ngFor="let news of news_list" class="ion-margin">
+
+    <a  target="_blank" href={{news.url}}><ion-img [src]="news.urlToImage"></ion-img></a>
+    
+    <ion-card-header>
+      <ion-card-title class="ion-padding" color="light">{{news.title}}</ion-card-title>
+      <ion-card-subtitle class="ion-padding">{{news.description}}</ion-card-subtitle>
+    </ion-card-header>
+    
+  </ion-card>
+</ion-content>
+
