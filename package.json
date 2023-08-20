@@ -30,7 +30,7 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^5.0.0",
     "@types/leaflet": "^1.5.19",
-    "firebase": "^8.1.1",
+    "firebase": "^10.2.0",
     "leaflet": "^1.7.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
